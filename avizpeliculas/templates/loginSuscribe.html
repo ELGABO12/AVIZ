@@ -1,0 +1,73 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'static/css/all.css' %}" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'static/css/all.min.css' %}" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'static/css/bootstrap.min.css.map' %}" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'static/css/bootstrap.min.css' %}" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'static/css/fonts.css' %}" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'static/css/aviz.css' %}" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- CUERPO PÁGINA -->
+    <main>
+        <section>
+            <div class="bg-loginSuscribe">
+                <div class="row" style="width: 100%;">
+                    <div class="col-12">
+                        <div class="window-reintentar text-center" id="window-reintentar">
+                            <i id="icon-ReConf" style="font-size: 50px; color: white;"><p id="p-icon-ReConf" style="color: white; font-size: 20px;"> UPS!</p></i>
+                            <br>
+                            <h4 id="texto-ReConf" style="color: red;">Algo salió mal, por favor vuelve a intentarlo.</h4>
+                            <p id="subtexto-ReConf" style="color: white;">La información ingresada no es válida, por favor vuelve a intentarlo.</p>
+                            <br>
+                            <button class="btn-reintentar" id="btn-reintentar" type="submit">Reintentar</button>
+                        </div>
+                        <form action="mailto">
+                            <div class="content-suscribe"  id="suscribe-window">
+                                <h2 class="title-suscribe">SUSCRIBETE A UN PLAN</h2>
+                                <br>
+                                <p style="color: white;">Suscribete hoy en <span style="font-weight: bold;">AVIZ</span> y te regalamos <span style="font-weight: bold;">30 días GRATIS</span>, luego solo paga 
+                                    <span style="font-weight: bold; color: red; font-size: 20px;">$5.500 al mes</span>. Puedes cancelar cuando quieras.</p>
+                                <input id="input-email" title="Ingresa tu correo electrónico" type="text" placeholder="Correo electrónico" class="email-input">
+                                <input id="contraseña-input" title="Crea tu contraseña"  type="password" placeholder="Contraseña">
+                                <input id="reContraseña-input" title="Reingresa tu contraseña" type="password" placeholder="Repetir contraseña">
+                                <input id="user-input" title="Crea tu nombre de usuario" type="text" placeholder="Nombre de usuario">
+                                <br><br><br>
+                                <button class="btn-suscribirse" id="btn-suscribirse" type="submit">Suscribirse</button>
+                                <br><br>
+                                <p style="color: white;">¿Ya tienes una cuenta con nosotros? <a href="#" id="btn-login">Inicia Sesión</a></p>
+                            </div>
+                        </form>
+                        <div>
+                            <div class="content-login" id="login-window">
+                                <h2 class="title-login">INICIA SESIÓN</h2>
+                                <br>
+                                <input type="text" placeholder="Correo electrónico" required>
+                                <input type="text" placeholder="Contraseña" required>
+                                <br><br><br>
+                                <button class="btn-login" type="submit">Acceder</button>
+                                <br><br>
+                                <p style="color: white;">¿Aún no tienes una cuenta con nosotros? <a href="#" id="btn-suscribe">Suscribirme</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
+
+{% endblock %}

@@ -1,0 +1,243 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'static/css/all.css' %}" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'static/css/all.min.css' %}" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'static/css/bootstrap.min.css.map' %}" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'static/css/bootstrap.min.css' %}" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'static/css/fonts.css' %}" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'static/css/aviz.css' %}" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- CUERPO PÁGINA -->
+    <main>
+        <section class="banner-index">
+            <div class="contenedor-title-banner text-center">
+                <h5 class="postNavbar">TODAS LAS NOTICIAS EN ESTE SITIO SON REDACTADAS POR NUESTROS PROPIOS PERIODISTAS.</h5>
+            </div>
+            <div class="fila-banner row text-center">
+                <div class="col-12" style="width: 100%;">
+                    <h2 class="title-banner">Bad Boys 2: Bad Boys para siempre</h2>
+                    <h4 class="subtitle-banner">¡La segunda entrega de Bad Boys llego a AVIZ!</h4>
+                    <br>
+                    <a href="#"><button class="btn-banner-index">VER PELÍCULA</button></a>
+                </div>
+            </div>
+        </section>
+        <section class="contenido-index">
+            <div class="contenedor-title-popular-section">
+                <h4 class="title-popular-section"><i class="fas fa-fire"></i> Películas más populares</h4>
+            </div>
+            <div class="contenedor-populares">
+                <div class="row" style="width: 100%;" id="mas-populares">
+                    <div class="col-lg-4 col-12">
+                        <div class="info-populares text-center">
+                            <br>
+                            <i class="fas fa-fire" style="font-size: 50px; color: white;"></i>
+                            <h1 class="title-populares">TODAS LAS PELÍCULAS CON MEJOR VALORACIÓN</h1>
+                            <h3 class="subtitle-populares">APARECERÁN EN ESTA SECCIÓN</h3>
+                            <p class="subtitle2-populares">¡Valora y comparte las películas para continuar trayendo contenido de interés para todos!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <div class="contenido-populares">
+                            <a href="#" style="text-decoration: none;"><div class="row">
+                                <div class="col-lg-12 col-12 fila-popular">
+                                   <div class="text-center mt-5">
+                                        <h3>Bad Boys 2: Bad Boys para siempre</h3>
+                                        <h5>¡La segunda entrega de los chicos malos ya llegó!</h5>
+                                        <br><br>
+                                        <p>¡Haz click para ver!</p>
+                                   </div>
+                                </div>
+                            </div></a>
+                            <br>
+                            <a href="#" style="text-decoration: none;"><div class="row">
+                                <div class="col-lg-12 col-12 fila-popular">
+                                    <div class="text-center mt-5">
+                                         <h3>Bad Boys 2: Bad Boys para siempre</h3>
+                                         <h5>¡La segunda entrega de los chicos malos ya llegó!</h5>
+                                         <br><br>
+                                         <p>¡Haz click para ver!</p>
+                                    </div>
+                                 </div>
+                             </div></a>
+                            <br>
+                            <a href="#" style="text-decoration: none;"><div class="row">
+                                <div class="col-lg-12 col-12 fila-popular">
+                                    <div class="text-center mt-5">
+                                         <h3>Bad Boys 2: Bad Boys para siempre</h3>
+                                         <h5>¡La segunda entrega de los chicos malos ya llegó!</h5>
+                                         <br><br>
+                                         <p>¡Haz click para ver!</p>
+                                    </div>
+                                 </div>
+                             </div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="contenedor-nuevos" style="background-color: black; padding: 20px;">
+                <div style="width: 100%;">
+                    <h4 class="title-recientes"><i class="fas fa-clock"></i> Películas / Series más recientes</h4>
+                </div>
+                <br>
+                <div class="row" id="mas-reciente" style="padding: 10px;">
+                    <div class="col-lg-2 col-12" style="margin-bottom: 12px;">
+                        <a href="#" style="text-decoration: none;"><div class="card" style="border: none;">
+                            <div class="card-img">
+                                <img src="{%static 'img/IMG-card-recientes.jpg'%}" style="width: 100%; height: auto;">
+                            </div>
+                            <div class="card-contenido" style="padding: 10px;">
+                                <div class="text-center">
+                                    <h5 style="color: black;">NORBIT</h5>
+                                    <a href="#"><button class="btn-card-nuevo">VER PELÍCULA</button></a>
+                                </div>
+                            </div>
+                        </div></a>
+                    </div>
+                    <div class="col-lg-2 col-12" style="margin-bottom: 12px;">
+                        <a href="#" style="text-decoration: none;"><div class="card" style="border: none;">
+                            <div class="card-img">
+                                <img src="{%static 'img/IMG-card-recientes.jpg'%}" style="width: 100%; height: auto;">
+                            </div>
+                            <div class="card-contenido" style="padding: 10px;">
+                                <div class="text-center">
+                                    <h5 style="color: black;">NORBIT</h5>
+                                    <a href="#"><button class="btn-card-nuevo">VER PELÍCULA</button></a>
+                                </div>
+                            </div>
+                        </div></a>
+                    </div>
+                    <div class="col-lg-2 col-12" style="margin-bottom: 12px;">
+                        <a href="#" style="text-decoration: none;"><div class="card" style="border: none;">
+                            <div class="card-img">
+                                <img src="{%static 'img/IMG-card-recientes.jpg'%}" style="width: 100%; height: auto;">
+                            </div>
+                            <div class="card-contenido" style="padding: 10px;">
+                                <div class="text-center">
+                                    <h5 style="color: black;">NORBIT</h5>
+                                    <a href="#"><button class="btn-card-nuevo">VER PELÍCULA</button></a>
+                                </div>
+                            </div>
+                        </div></a>
+                    </div>
+                    <div class="col-lg-2 col-12" style="margin-bottom: 12px;">
+                        <a href="#" style="text-decoration: none;"><div class="card" style="border: none;">
+                            <div class="card-img">
+                                <img src="{%static 'img/IMG-card-recientes.jpg'%}" style="width: 100%; height: auto;">
+                            </div>
+                            <div class="card-contenido" style="padding: 10px;">
+                                <div class="text-center">
+                                    <h5 style="color: black;">NORBIT</h5>
+                                    <a href="#"><button class="btn-card-nuevo">VER PELÍCULA</button></a>
+                                </div>
+                            </div>
+                        </div></a>
+                    </div>
+                    <div class="col-lg-2 col-12" style="margin-bottom: 12px;">
+                        <a href="#" style="text-decoration: none;"><div class="card" style="border: none;">
+                            <div class="card-img">
+                                <img src="{%static 'img/IMG-card-recientes.jpg'%}" style="width: 100%; height: auto;">
+                            </div>
+                            <div class="card-contenido" style="padding: 10px;">
+                                <div class="text-center">
+                                    <h5 style="color: black;">NORBIT</h5>
+                                    <a href="#"><button class="btn-card-nuevo">VER PELÍCULA</button></a>
+                                </div>
+                            </div>
+                        </div></a>
+                    </div>
+                    <div class="col-lg-2 col-12" style="margin-bottom: 12px;">
+                        <a href="#" style="text-decoration: none;"><div class="card" style="border: none;">
+                            <div class="card-img">
+                                <img src="{%static 'img/IMG-card-recientes.jpg'%}" style="width: 100%; height: auto;">
+                            </div>
+                            <div class="card-contenido" style="padding: 10px;">
+                                <div class="text-center">
+                                    <h5 style="color: black;">NORBIT</h5>
+                                    <a href="#"><button class="btn-card-nuevo">VER PELÍCULA</button></a>
+                                </div>
+                            </div>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+            <br class="br1">
+            <div class="contenedor-info-index">
+                <div class="text-center">
+                    <h4 style="font-family: Copperplate, Copperplate Gothic Light, fantasy; color: black; background-color: rgba(255, 255, 255, 0.700);">TODO LO QUE QUIERES VER, EN UN SOLO LUGAR</h4>
+                    <br>
+                    <p style="color: white;">
+                        Disfruta de la mejor calidad de imagen, traducidos al español y en español latino.
+                    </p>
+                    <h5 style="font-family: Copperplate, Copperplate Gothic Light, fantasy; color: white;">Suscribete totalmente GRATIS en AVIZ y valora las películas que más te gusten.</h5>
+                    <br>
+                    <a href="#"><button class="btn-info-index">SUSCRIBIRSE</button></a>
+                </div>
+            </div>
+            <br class="br2">
+            <div class="contenedor-estrenos-index" id="nuevos-estrenos" style="padding: 20px; background-color: black;">
+                <div style="width: 100%;" id="mangas-recientes">
+                    <div class="row">
+                        <div class="col-lg-9 col-12">
+                            <h4 style="font-family: Copperplate, Copperplate Gothic Light, fantasy; font-weight: bold; color: white;"><i class="fas fa-book-reader"></i> Nuevos estrenos</h4>
+                        </div>
+                        <div class="col-lg-3 col-12">
+                            <input type="text" placeholder="Buscar películas, series" style="float: right; border: none; 
+                            background-color: rgb(196, 196, 196); color: black; padding: 5px; width: 300px;">
+                            <button style="border: none; border-radius: 3px; background-color: white; color: black; padding: 5px; 
+                            float: right; margin-right: 6px; width: 50px;"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="padding: 10px;">
+                    <div class="col-lg-3 col-12" style="margin-bottom: 12px;">
+                        <div class="card">
+                            <div class="contenido-card">
+                                <a href="#"><img src="{%static 'img/IMG-banner-index2.jpg'%}" style="width: 100%;"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12" style="margin-bottom: 12px;">
+                        <div class="card">
+                            <div class="contenido-card">
+                                <a href="#"><img src="{%static 'img/IMG-banner-index2.jpg'%}" style="width: 100%;"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12" style="margin-bottom: 12px;">
+                        <div class="card">
+                            <div class="contenido-card">
+                                <a href="#"><img src="{%static 'img/IMG-banner-index2.jpg'%}" style="width: 100%;"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12">
+                        <div class="card">
+                            <div class="contenido-card">
+                                <a href="#"><img src="{%static 'img/IMG-banner-index2.jpg'%}" style="width: 100%;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br class="br3">
+        </section>
+    </main>
+</body>
+
+</html>
+
+{% endblock %}
